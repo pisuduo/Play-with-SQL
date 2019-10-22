@@ -25,7 +25,7 @@ select * from likes;
 
 select * from friends;
 ------------------ solution ---------------------------------------
-select x.userid,y.pageid
+select distinct x.userid as users,y.pageid as recom
 from friends x
 join likes y            -- join with likes, to see friend's likes.
 on x.friendid=y.userid
